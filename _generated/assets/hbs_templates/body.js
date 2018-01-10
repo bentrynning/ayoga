@@ -7,5 +7,6 @@ define(["handlebars"], function(Handlebars) { return Handlebars.template({"compi
     + alias4(((helper = (helper = helpers.absolute_prefix || (depth0 != null ? depth0.absolute_prefix : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"absolute_prefix","hash":{},"data":data}) : helper)))
     + "assets/css/main.css\">\n\n		<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400\" rel=\"stylesheet\">\n\n	</head>\n	<body>\n\n"
     + ((stack1 = container.invokePartial(partials["@partial-block"],depth0,{"name":"@partial-block","data":data,"indent":"\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "\n	</body>\n\n</html>\n";
+    + ((stack1 = container.invokePartial(partials.footer,depth0,{"name":"footer","data":data,"indent":"\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "	</body>\n	\n</html>\n";
 },"usePartial":true,"useData":true}); });
