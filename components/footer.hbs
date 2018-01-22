@@ -1,9 +1,16 @@
-<footer>
-	<footer class="panel color_4 dark text_center" style="background-color: {{footer_background_color}}">
-		<div class="panel_body">
+<footer class="panel color_4 dark text_center" style="background-color: {{footer_background_color}}">
+	<div class="panel_body">
+		<div class="footer__wrapper">
 			<div class="credits">{{footer_text}}</div>
-			<div class="wedge-2x"></div>
-			<a href="http://www.endurojs.com/" target="_blank"></a>
+			<div class="footer__sosial">
+				{{#each social}}
+				<a class="footer__link social" href="{{link}}">
+					<div class="social_icon">
+						<i class="fa fa-{{icon}}"></i>
+					</div>
+				</a>
+				{{/each}}
+			</div>
 		</div>
-	</footer>
+	</div>
 </footer>

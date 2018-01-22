@@ -1,16 +1,19 @@
 .panel {
-	background-size: cover;
-	background-color: scheme(1);
-	background-position: center center;
-
-	&.screen {
-		height: 100vh;
-	}
-
-	@each $color in $scheme-colors {
-		$index: index($scheme-colors, $color);
-		&.color_#{$index} {
-			background-color: $color;
-		}
-	}
+    position: relative;
+    background-size: cover;
+    background-color: scheme(1);
+    background-position: center center;
+    &.screen {
+        height: 100vh;
+    }
+    &.banner {
+        height: 70vh;
+        clip-path: inset(0 0 0 0 round 0 0 60% 0%);
+    }
+    @each $color in $scheme-colors {
+        $index: index($scheme-colors, $color);
+        &.color_#{$index} {
+            background-color: $color;
+        }
+    }
 }

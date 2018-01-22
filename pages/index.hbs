@@ -1,16 +1,9 @@
 {{#> body}}
 
-		<div class="panel screen" style="background-image: url('{{main_image}}')">
+		<div class="panel banner" style="background-image: url('{{main_image}}')">
 			<div class="veil"></div>
-			<div class="panel_body fullwidth">
-
-				<div class="contentbox">
-					<div class="contentbox_content">
-						<h1>{{name}}</h1>
-						<h2>{{specialty}}</h2>
-					</div>
-				</div>
-
+			<div class="panel_body">
+				{{>nav}}
 			</div>
 		</div>
 
@@ -37,22 +30,6 @@
 					</a>
 				{{/each}}
 
-			</div>
-		</div>
-
-		<div class="panel socials color_3">
-			<div class="panel_body">
-				{{#each social}}
-					<a class="social" href="{{link}}">
-						<div class="social_icon">
-							<i class="fa fa-{{icon}}"></i>
-						</div>
-						<div class="wedge-3x"></div>
-						<div class="social_text">
-							{{text}}
-						</div>
-					</a>
-				{{/each}}
 			</div>
 		</div>
 
