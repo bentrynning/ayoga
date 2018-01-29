@@ -1,0 +1,13 @@
+body.nav-active {
+    .page {
+        transform: translateX(-250px);
+    }
+}
+
+.page {
+    transition: transform .15s cubic-bezier(.2, .3, .25, .9);
+    transform: translateX(0);
+    @include media-breakpoint-up(sm) {
+        transform: translateX(0) !important;
+    }
+}

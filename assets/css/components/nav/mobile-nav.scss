@@ -1,0 +1,35 @@
+$hamburger-types: (collapse);
+$hamburger-layer-width: 35px;
+@import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+body.nav-active {
+    .mobile-nav {
+        transform: translateX(0);
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 25px;
+    width: 250px;
+    transform: translateX(250px);
+    transition: transform .15s cubic-bezier(.2, .3, .25, .9);
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+        font-size: 18px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: 2px solid;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        transform: translateX(250px) !important;
+    }
+}

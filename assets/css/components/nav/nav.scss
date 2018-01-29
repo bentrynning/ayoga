@@ -1,17 +1,45 @@
+$hamburger-types: (collapse);
+$hamburger-layer-width: 35px;
+@import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 .nav {
     max-width: 1280px;
     margin: auto;
-    padding: 15px;
     color: $white;
     display: flex;
     flex-direction: row-reverse;
     font-size: 18px;
-    &__list {}
+    &__list {
+        display: none;
+    }
     &__link {
         margin-left: 20px;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
         &:hover {
             border-bottom: 2px solid $white;
+        }
+    }
+    .hamburger {
+        outline: none;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-box {
+        margin-left: 10px;
+    }
+    .hamburger .hamburger-inner {
+        display: block;
+        background-color: white;
+        &:before,
+        &:after {
+            background-color: white;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        &__list {
+            display: block;
+        }
+        .hamburger {
+            display: none;
         }
     }
 }

@@ -10,7 +10,7 @@
 <div class="panel">
 	<div class="panel_body">
 		<div class="row">
-			<div class="col-md-8 offset-md-2">
+			<div class="col-md-8">
 				<h1>{{name}}</h1>
 				<h2>{{specialty}}</h2>
 				<p>{{background}}</p>
@@ -23,11 +23,11 @@
 	<div class="panel_body fullwidth">
 
 		{{#each projects}}
-		<a href="{{link}}" target="_blank" class="project" style="background-image: url('{{image}}')">
-			<div class="project_info">
-				<div class="project_name">{{title}}</div>
-			</div>
-		</a>
+			<a href="{{link}}" target="_blank" class="project" style="background-image: url('{{image}}')">
+				<div class="project_info">
+					<div class="project_name">{{title}}</div>
+				</div>
+			</a>
 		{{/each}}
 
 	</div>

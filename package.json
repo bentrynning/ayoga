@@ -9,11 +9,12 @@
     "author": "Martin Gottweis",
     "license": "ISC",
     "dependencies": {
-        "enduro": "1.4.23",
-        "jquery": "^3.1.1",
         "bootstrap": "4.0.0-alpha.5",
-        "requirejs": "^2.3.2",
-        "font-awesome": "^4.7.0"
+        "enduro": "1.4.23",
+        "font-awesome": "^4.7.0",
+        "hamburgers": "^0.9.3",
+        "jquery": "^3.1.1",
+        "requirejs": "^2.3.2"
     },
     "devDependencies": {
         "babel-preset-env": "^1.6.1"
