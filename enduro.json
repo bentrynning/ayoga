@@ -1,5 +1,5 @@
 {
-    "project_name": "enduro_mirror",
+    "project_name": "ayoga",
     "project_slug": "em",
     "s3": {
         "bucket": "enduro.mirror",

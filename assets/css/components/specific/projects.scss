@@ -1,41 +1,45 @@
-.projects {
-	.project {
-		width: 33.333%;
-		float: left;
+.practices {
+	display: flex;
+	flex-wrap: wrap;
+}
+.practice {
+	width: 33.333%;
+	float: left;
+	position: relative;
+	font-weight: 300;
+	background-color: $white;
+	overflow: hidden;
+	.practice_image {
 		background-size: cover;
-		min-height: 400px;
+		min-height: 300px;
 		background-position: center center;
-		position: relative;
-		font-weight: 300;
+		transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
+	}
+	.practice_name {
+		background-color: scheme(1);
+		border: 5px solid $red-light;
+		padding: 20px;
+		display: inline-block;
+		position: absolute;
+		top:0;
+		left: 0;
+	}
 
-		.project_name {
-			background-color: scheme(1);
-			padding: 20px;
-			display: inline-block;
-			position: relative;
-		}
-
-		&:before {
-			content: '';
-			@include full();
-			background-color: rgba($black, 0);
-			transition: background-color $standard-transition;
-		}
-
-		&:hover {
-			&:before {
-				background-color: rgba($black, .4);
-			}
-		}
-
-		@include media-breakpoint-down(md) {
-			width: 50%;
-		}
-
-		@include media-breakpoint-down(sm) {
-			width: 100%;
+	&:hover {
+		.practice_image {
+			transform: scale(1.1);
 		}
 	}
 
+	@include media-breakpoint-down(md) {
+		width: 50%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
 	@include clearfix();
 }
+
+
+

@@ -1,20 +1,21 @@
 {
-    "name": "enduro_mirror",
+    "name": "ayoga",
     "version": "1.0.0",
     "description": "Personal portfolio theme for enduro.js",
     "main": "assets/vendor/enduro/index.js",
     "scripts": {
-        "start": "node_modules/.bin/enduro start"
+        "dev": "enduro dev & npm run parcle",
+        "parcle": "parcel watch js/main.js --out-dir _generated/assets/js"
     },
-    "author": "Martin Gottweis",
+    "author": "Bent Rynning",
     "license": "ISC",
     "dependencies": {
         "bootstrap": "4.0.0-alpha.5",
-        "enduro": "1.4.23",
+        "enduro": "1.4.45",
         "font-awesome": "^4.7.0",
         "hamburgers": "^0.9.3",
         "jquery": "^3.1.1",
-        "requirejs": "^2.3.2"
+        "parcel-bundler": "^1.6.2"
     },
     "devDependencies": {
         "babel-preset-env": "^1.6.1"

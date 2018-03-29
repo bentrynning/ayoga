@@ -4,6 +4,10 @@
 	background-color: scheme(1);
 	display: inline-block;
 
+	&--full-width {
+		width: 100%;
+	}
+
 	.contentbox_content {
 		text-align: center;
 	}
