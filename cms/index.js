@@ -14,23 +14,23 @@
 		{
 			title: 'Autonomous submarine',
 			$description_type: 'textarea',
-			description: 'Dette vil forklare litt mer om rettningen og hva det innebærer',
+			description: 'Dette vil forklare litt mer om retningene og hva det innebærer.',
 			$image_type: 'image',
 			image: 'https://s3-eu-west-1.amazonaws.com/enduro.mirror/direct_uploads/1485880340_pexels-photo-27631.jpg'
 		},
 		{
 			title: 'Painting identification',
 			$description_type: 'textarea',
-			description: 'Litt mer',
+			description: 'Mulighet for å treffe sitt indre og ytre.',
 			$image_type: 'image',
-			image: ''
+			image: 'https://s3-eu-west-1.amazonaws.com/enduro.mirror/direct_uploads/1485880478_pexels-photo-92323.jpeg'
 		},
 		{
 			title: 'Drone obstacle identification',
 			$description_type: 'textarea',
-			description: '',
+			description: 'La inspirasjonene komme, ta imot nye ideer og tanker.',
 			$image_type: 'image',
-			image: ''
+			image: 'https://wallpapers.wallhalla.com/gX19xmgKtvo1_loTOGpQ_8be8af45/aHR0cHM6Ly9hbHBoYS53YWxsaGF2ZW4uY2Mvd2FsbHBhcGVyLzI0NDAyMg=='
 		}
 	],
 	$hobby_background_type: 'image',
