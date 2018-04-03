@@ -3,17 +3,18 @@ $hamburger-layer-width: 35px;
 @import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 .nav {
     max-width: 1280px;
-    margin: auto;
     color: $white;
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
     font-size: 18px;
+    margin-left: auto;
     &__list {
         display: none;
     }
     &__link {
         margin-left: 20px;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+        border-bottom: 2px solid transparent;
         &:hover {
             border-bottom: 2px solid $white;
         }
@@ -22,6 +23,7 @@ $hamburger-layer-width: 35px;
         outline: none;
         display: flex;
         align-items: center;
+        padding: 0;
     }
     .hamburger-box {
         margin-left: 10px;

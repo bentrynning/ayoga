@@ -11,3 +11,17 @@ body.nav-active {
         transform: translateX(0) !important;
     }
 }
+.uppercase{
+    text-transform: uppercase;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 200px;
+    font-size: 1.3em;
+    &__text {
+        display: block
+    }
+}

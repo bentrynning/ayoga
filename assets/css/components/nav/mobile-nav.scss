@@ -1,6 +1,6 @@
 $hamburger-types: (collapse);
 $hamburger-layer-width: 35px;
-@import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
 body.nav-active {
     .mobile-nav {
         transform: translateX(0);
@@ -16,6 +16,7 @@ body.nav-active {
     width: 250px;
     transform: translateX(250px);
     transition: transform .15s cubic-bezier(.2, .3, .25, .9);
+    
     &__list {
         display: flex;
         flex-direction: column;
