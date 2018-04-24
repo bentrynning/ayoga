@@ -9,12 +9,12 @@ enduro.templating_engine.registerHelper('blog', function (options) {
     // get_cms_list will return a structured list of all pages in a project
     return enduro.api.pagelist_generator.get_cms_list()
         .then((pagelist) => {
-
+            
             // will store the promises from reading all the blog entries
             var get_content_promises = []
 
             blog_entries = _.chain(pagelist.structured.blog)
-                .filter((o) => { return typeof o === 'object' }).value() // filter pages only
+                .filter((o) => typeof o === 'object').value() // filter pages only
 
             // goes through all the blog entries and loads their content
             for (page_id in blog_entries) {
@@ -23,14 +23,14 @@ enduro.templating_engine.registerHelper('blog', function (options) {
                 function get_content (page) {
                     get_content_promises.push(enduro.api.flat.load(page.fullpath).then((content) => { page.blog_entry = content }))
                 }
-
-                get_content(page)
+   
+                get_content(page);
             }
 
             return Promise.all(get_content_promises)
         })
         .then(() => {
-
+            blog_entries = blog_entries.filter(entry => entry.hidden !== true);
             // pass blog entries as context for the template
             return options.fn(blog_entries)
         })

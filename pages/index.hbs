@@ -18,19 +18,19 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="practices">
-
-					{{#each practices}}
-					<a href="{{link}}" target="_blank" class="practice">
-						<div class="practice_image" style="background-image: url('{{image}}')"></div>
-						<div class="practice_info">
-							<div class="practice_name">{{title}}</div>
-						</div>
-						<div class="contentbox contentbox--full-width">
-							{{description}}
-						</div>
-					</a>
-					{{/each}}
-
+					{{#practices}}
+						{{#each this}}
+							<a href="/practices/{{page_slug}}" class="practice">
+								<div class="practice_image" style="background-image: url('{{practice_entry.image}}')"></div>
+								<div class="practice_info">
+									<div class="practice_name">{{practice_entry.title}}</div>
+								</div>
+								<div class="contentbox contentbox--full-width">
+									{{practice_entry.description}}
+								</div>
+							</a>
+						{{/each}}
+					{{/practices}}
 				</div>
 			</div>
 		</div>

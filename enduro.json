@@ -1,11 +1,15 @@
 {
-    "project_name": "ayoga",
-    "project_slug": "em",
-    "s3": {
-        "bucket": "enduro.mirror",
-        "region": "eu-west-1"
-    },
-    "babel": {
-        "presets": ["env"]
-    }
+	"project_name": "ayoga",
+	"project_slug": "em",
+	"babel": {
+		"presets": [
+			"env"
+		]
+	},
+	"bricks": {
+		"enduro_wysiwyg_quill": {
+			"theme": "snow"
+		}
+	
+	}
 }

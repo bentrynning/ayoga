@@ -1,0 +1,19 @@
+.blog {
+    &__article {
+      
+    }
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        margin-top: 10px;
+    }
+
+    @include media-breakpoint-up(md) {
+		&__info {
+            margin-top: 0;
+        }
+	}
+}

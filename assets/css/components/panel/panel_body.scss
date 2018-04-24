@@ -8,6 +8,9 @@
         max-width: none;
         padding: 0;
     }
+    &.no-padding-top {
+        padding-top: 0;
+    }
     @include media-breakpoint-up(sm) {
         padding: 50px;
     }

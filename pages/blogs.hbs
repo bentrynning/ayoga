@@ -1,0 +1,27 @@
+{{#> body}}
+	<div class="panel">
+		<div class="panel_body">
+			<h1>{{blog_title}}</h1>
+		</div>
+	</div>
+	{{#blog}}
+
+	<div class="panel_body no-padding-top">
+		{{#each this}}
+		<article class="row blog__article">
+			<div class="col-md-4 blog__image">
+				<img src="{{blog_entry.cover_image}}" alt="Cover blog image">
+			</div>
+			<div class="col-md-8 blog__info">
+				<h2>{{blog_entry.blog_title}}</h2>
+				<p>{{{blog_entry.blog_desc}}}</p>
+				<a href="/blog/{{page_slug}}">Read more...</a>
+			</div>
+		</article>
+		<div class="wedge-3x"></div>
+		{{/each}}
+	</div>
+
+	{{/blog}}
+
+{{/body}}

@@ -1,4 +1,4 @@
-const state = {
+let state = {
     isActive: false,
     test:'test'
 }
