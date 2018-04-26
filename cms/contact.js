@@ -1,5 +1,4 @@
 ({
-	name: 'Kontakt',
+	name: 'Ta kontakt med oss',
 	contact_email: 'contact@endurojs.com',
-	page_title: 'Authentic yoga'
 })

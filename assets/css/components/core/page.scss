@@ -19,9 +19,18 @@ body.nav-active {
     align-items: center;
 }
 .logo {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3em;
     &__text {
         display: block
+    }
+    &__svg {
+        padding-right: 10px;
+        max-width: 60px;
+    }
+    &__svg svg {
+        storke: #fff;
     }
 }
