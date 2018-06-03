@@ -15,6 +15,7 @@ $hamburger-layer-width: 35px;
         margin-left: 20px;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
         border-bottom: 2px solid transparent;
+        flex: 0 0 auto;
         &:hover {
             border-bottom: 2px solid $white;
         }

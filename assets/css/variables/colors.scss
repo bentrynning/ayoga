@@ -1,7 +1,7 @@
 
 // basics
 
-$scheme-colors: (#fff, #2b2928, #fafdff) !default;
+$scheme-colors: (#fff, #373a3c, #fafdff) !default;
 
 @function scheme($color) {
 	@return nth($scheme-colors, $color)

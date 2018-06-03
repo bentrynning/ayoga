@@ -1,3 +1,3 @@
 ({
-	blog_title: 'Nye historier'
+	blog_title: 'Historier som teller'
 })

@@ -1,26 +1,45 @@
-{
+({
 	name: 'Authentic yoga',
-	isIndex: true,
-	specialty: 'Her kommer undertekst',
+	page_title: 'Authentic yoga',
+	specialty: 'Inspirerende yoga',
 	background: 'Litt mer informasjon om Authentic Yoga og hva vi driver med',
 	$main_image_type: 'image',
 	main_image: '/remote/direct_uploads/1522340215_wallhalla-O80Q9e3IyK.jpg',
 	$ingress_type: 'textarea',
-	ingress: '',
-	$practices_min: 1,
+	ingress: 'sadsdasdsa',
 	practices_title: 'Rettninger',
 	practices_beskrivelse: 'Beskrivelse kommer her',
-	$hobby_background_type: 'image',
-	hobby_background: 'https://s3-eu-west-1.amazonaws.com/enduro.mirror/direct_uploads/1485880478_pexels-photo-92323.jpeg',
-	hobby_title: 'Priser',
-	hobby_subtitle: 'Her finner du prisoversikt',
+	$price_background_color_size: 'inline',
+	$price_background_color_type: 'colorpicker',
+	price_background_color: '#f4f4f4',
+	price_title: 'Priser',
+	price_subtitle: 'Her finner du prisoversikt',
+	$price_min: 1,
+	price_list: [
+		{
+			title: 'Underholdnings youga',
+			$description_type: 'textarea',
+			description: 'Dette inneholder litt her og litt annet der, som kan være greit å få med seg.',
+			price: '100 kr'
+		},
+		{
+			title: 'Dyp yoga',
+			$description_type: 'textarea',
+			description: 'Enda mer nytting som kan betales for her',
+			price: '200 kr'
+		},
+		{
+			title: 'Utenomjorden',
+			$description_type: 'textarea',
+			description: 'Valuta for pengene er noe du får her.',
+			price: '500 kr'
+		}
+	],
 	cta_tagline: 'Kom i kontakt med Authentic yoga',
 	cta_text: 'I am actively looking for new challenges',
+	cta_button_text: 'Ta kontakt',
 	contact_email: 'contact@endurojs.com',
-	page_title: 'Authentic yoga',
-	display_edit_stamp: false,
 	$style_expander: true,
-	$style_info: 'won\'t work with the temp action',
 	style: {
 		$background_color_size: 'inline',
 		$background_color_type: 'colorpicker',
@@ -32,4 +51,4 @@
 		$accent_color_type: 'colorpicker',
 		accent_color: '#fafdff'
 	}
-}
+})

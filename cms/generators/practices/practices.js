@@ -1,5 +1,4 @@
 ({
-
     title: '',
     $description_type: 'textarea',
     description: 'D',

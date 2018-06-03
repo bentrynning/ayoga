@@ -1,7 +1,6 @@
-{
+({
 	menu_text: 'Meny',
-	link1: 'Hjem',
-	link2: 'Om oss',
-	link3: 'Kontakt',
+	link2: 'Om meg',
+	link3: 'Aktuelt',
 	link4: 'Blog'
-}
+})

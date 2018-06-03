@@ -4,7 +4,10 @@
 	<div class="panel_body">
 		<div class="row">
 			<div class="col-md-8">
-				<h2>{{specialty}}</h2>
+				<h1>
+					{{specialty}}
+					<span class="heading-border"></span>
+				</h1>
 				<p>{{background}}</p>
 			</div>
 		</div>
@@ -13,43 +16,58 @@
 
 <div class="panel">
 	<div class="panel_body">
-		<h2>{{practices_title}}</h2>
+		<h1>
+			{{practices_title}}
+			<span class="heading-border"></span>
+		</h1>
 		<p>{{practices_beskrivelse}}</p>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="practices">
-					{{#practices}}
-						{{#each this}}
-							<a href="/practices/{{page_slug}}" class="practice">
-								<div class="practice_image" style="background-image: url('{{practice_entry.image}}')"></div>
-								<div class="practice_info">
-									<div class="practice_name">{{practice_entry.title}}</div>
-								</div>
-								<div class="contentbox contentbox--full-width">
-									{{practice_entry.description}}
-								</div>
-							</a>
-						{{/each}}
-					{{/practices}}
-				</div>
-			</div>
+		<div class="practices">
+			{{#practices}}
+				{{#each this}}
+					<a href="/practices/{{page_slug}}" class="practice">
+						<div class="practice__image" style="background-image: url('{{practice_entry.image}}')"></div>
+						<div class="practice__info">
+							<div class="practice__name">{{practice_entry.title}}</div>
+						</div>
+						<div class="practice__desc contentbox contentbox--full-width">
+							{{practice_entry.description}}
+						</div>
+					</a>
+				{{/each}}
+			{{/practices}}
 		</div>
 	</div>
 </div>
 
 <div class="wedge-3x"></div>
 
-<div class="panel screen" style="background-image: url('{{hobby_background}}')">
-	<div class="veil"></div>
+<div class="panel screen" style="background-color:{{price_background_color}}">
 	<div class="panel_body fullwidth">
-
 		<div class="contentbox">
 			<div class="contentbox_content">
-				<h1>{{hobby_title}}</h1>
-				<h2>{{hobby_subtitle}}</h2>
+				<h1>{{price_title}}</h1>
+				<h2>{{price_subtitle}}</h2>
 			</div>
 		</div>
+	</div>
 
+	<div class="panel_body">
+		<div class="cards">
+			{{price_sdescription}}
+			{{#each price_list}}
+				<div class="card">
+					<div class="card__wrap">
+						<div class="card__title">{{title}}</div>
+						<div class="card__content">
+							<div class="card__name">{{description}}</div>
+						</div>
+						<div class="card__bottom">
+							{{price}}
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
 	</div>
 </div>
 
@@ -59,7 +77,7 @@
 		<div class="wedge"></div>
 		<h3>{{cta_text}}</h3>
 		<div class="wedge-3x"></div>
-		<a class="btn" href="mailto:ayouga@gmail.com">Contact me</a>
+		<a class="btn" href="mailto:ayouga@gmail.com">{{cta_button_text}}</a>
 	</div>
 </div>
 
