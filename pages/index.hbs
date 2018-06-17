@@ -4,7 +4,7 @@
 	<div class="panel_body">
 		<div class="row">
 			<div class="col-md-8">
-				<h1>
+				<h1 class="h1">
 					{{specialty}}
 					<span class="heading-border"></span>
 				</h1>
@@ -16,7 +16,7 @@
 
 <div class="panel">
 	<div class="panel_body">
-		<h1>
+		<h1 class="h1">
 			{{practices_title}}
 			<span class="heading-border"></span>
 		</h1>
@@ -41,12 +41,12 @@
 
 <div class="wedge-3x"></div>
 
-<div class="panel screen" style="background-color:{{price_background_color}}">
+<div class="panel" style="background-color:{{price_background_color}}">
 	<div class="panel_body fullwidth">
-		<div class="contentbox">
+		<div class="sp-header">
 			<div class="contentbox_content">
-				<h1>{{price_title}}</h1>
-				<h2>{{price_subtitle}}</h2>
+				<h1 class="h1">{{price_title}}</h1>
+				<h2 class="h2">{{price_subtitle}}</h2>
 			</div>
 		</div>
 	</div>
@@ -57,12 +57,12 @@
 			{{#each price_list}}
 				<div class="card">
 					<div class="card__wrap">
-						<div class="card__title">{{title}}</div>
+						<div class="card__title"><h3 class="h3">{{title}}</h3></div>
 						<div class="card__content">
 							<div class="card__name">{{description}}</div>
 						</div>
 						<div class="card__bottom">
-							{{price}}
+							{{price_text}} {{price}}
 						</div>
 					</div>
 				</div>
@@ -73,9 +73,9 @@
 
 <div class="panel color_3 text_center">
 	<div class="panel_body">
-		<h2>{{cta_tagline}}</h2>
+		<h2 class="h2">{{cta_tagline}}</h2>
 		<div class="wedge"></div>
-		<h3>{{cta_text}}</h3>
+		<h3 class="h3">{{cta_text}}</h3>
 		<div class="wedge-3x"></div>
 		<a class="btn" href="mailto:ayouga@gmail.com">{{cta_button_text}}</a>
 	</div>

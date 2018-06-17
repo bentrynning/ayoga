@@ -11,27 +11,30 @@
 	practices_beskrivelse: 'Beskrivelse kommer her',
 	$price_background_color_size: 'inline',
 	$price_background_color_type: 'colorpicker',
-	price_background_color: '#f4f4f4',
+	price_background_color: '#fafbfd',
 	price_title: 'Priser',
 	price_subtitle: 'Her finner du prisoversikt',
 	$price_min: 1,
 	price_list: [
 		{
-			title: 'Underholdnings youga',
+			title: 'Yoga 1',
 			$description_type: 'textarea',
 			description: 'Dette inneholder litt her og litt annet der, som kan være greit å få med seg.',
+			price_text: 'Pris',
 			price: '100 kr'
 		},
 		{
-			title: 'Dyp yoga',
+			title: 'Yoga 2',
 			$description_type: 'textarea',
 			description: 'Enda mer nytting som kan betales for her',
+			price_text: 'Pris',
 			price: '200 kr'
 		},
 		{
-			title: 'Utenomjorden',
+			title: 'Yoga 3',
 			$description_type: 'textarea',
 			description: 'Valuta for pengene er noe du får her.',
+			price_text: 'Pris',
 			price: '500 kr'
 		}
 	],

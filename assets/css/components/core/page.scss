@@ -11,25 +11,39 @@ body.nav-active {
         transform: translateX(0) !important;
     }
 }
+
 .uppercase{
     text-transform: uppercase;
 }
+
 .header {
     display: flex;
     align-items: center;
 }
+
+.sp-header {
+    width: 400px;
+    margin: auto;
+    display: block;
+    padding: 22px;
+    text-align: center;
+	background-color: scheme(1);
+}
+
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
     padding-right: 10px;
+    min-height: 50px;
     &__text {
         display: block
     }
     &__svg {
         padding-right: 10px;
         max-width: 60px;
+        height: 60px;
     }
     &__svg svg {
         storke: #fff;

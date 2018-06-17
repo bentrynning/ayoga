@@ -4,12 +4,27 @@
     flex-wrap: wrap;
 }
 .card {
+    display: flex;
     width: 33.33%;
     padding: 10px;
 
     &__wrap {
         background-color: $white;
+        width: 100%;
         padding: 20px;
+        box-shadow: 1px 1px 1px $shadow;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__bottom {
+        padding-top: 20px;
+    }
+
+    &__content {
+        padding-top: 10px;
     }
 
     @include media-breakpoint-down(md) {

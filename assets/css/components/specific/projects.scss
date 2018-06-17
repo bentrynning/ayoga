@@ -8,6 +8,7 @@
 	font-weight: 300;
 	background-color: $white;
 	padding: 15px;
+	overflow: hidden;
 	&__image {
 		background-size: cover;
 		min-height: 300px;
