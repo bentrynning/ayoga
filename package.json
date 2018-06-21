@@ -5,6 +5,8 @@
     "main": "assets/vendor/enduro/index.js",
     "scripts": {
         "dev": "node_modules/.bin/enduro dev & npm run parcle",
+        "server": "node_modules/.bin/enduro start",
+        "build" : "NODE_ENV=production && parcel build js/main.js",
         "parcle": "parcel watch js/main.js --out-dir _generated/assets/js"
     },
     "author": "Bent Rynning",

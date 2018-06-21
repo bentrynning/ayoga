@@ -1,9 +1,11 @@
-{
-    users: [{
-        username: 'admin',
-        tags: [],
-        salt: 'd3fd292d5679b346c5f218eb4ce2098c',
-        hash: '65860eaf9952a4da9914ef19e7758cd22828b69788e0d6ba6c4fb4ab6b2578fc',
-        user_created_timestamp: 1515530828450
-    }]
-}
+({
+	users: [
+		{
+			username: 'nina',
+			tags: [],
+			salt: 'd6e100aeed5a1b870999b083ebcde985',
+			hash: '81f586de03388fb91c622d6823b2a8aba3212fa7841b4b9489cf55941968e7eb',
+			user_created_timestamp: 1529532836269
+		}
+	]
+})

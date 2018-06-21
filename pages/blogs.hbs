@@ -18,11 +18,13 @@
 			<div class="col-md-8 blog__info">
 				<h2>{{blog_entry.blog_title}}</h2>
 				<p>{{{blog_entry.blog_desc}}}</p>
-				<a href="/blog/{{page_slug}}">Read more...</a>
+				<div class="wedge-3x"></div>
+				<a href="/blog/{{page_slug}}">{{blog_entry.blog_link_text}}</a>
 			</div>
 		</article>
 		<div class="wedge-3x"></div>
 		{{/each}}
+
 	</div>
 
 	{{/blog}}
