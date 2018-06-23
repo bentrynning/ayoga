@@ -1,0 +1,22 @@
+body.nav-active {
+    .header {
+        transform: translateX(-250px);
+    }
+}
+.header {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: transform .15s cubic-bezier(.2, .3, .25, .9);
+    &__wrapper {
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1400px;
+    }
+}

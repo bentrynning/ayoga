@@ -3,17 +3,23 @@
     background-size: cover;
     background-color: scheme(1);
     background-position: center center;
-    background-color: #ffffff;
+    background-color: $white;
     &.screen {
         height: 100vh;
     }
     &.banner {
-        height: 50vh;
+        height: 30vh;
     }
     @each $color in $scheme-colors {
         $index: index($scheme-colors, $color);
         &.color_#{$index} {
             background-color: $color;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        &.banner {
+            height: 400px;
         }
     }
 }

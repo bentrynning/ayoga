@@ -3,7 +3,7 @@ $hamburger-layer-width: 35px;
 @import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 .nav {
     max-width: 1280px;
-    color: $white;
+    color: $black;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -12,12 +12,19 @@ $hamburger-layer-width: 35px;
         display: none;
     }
     &__link {
-        margin-left: 20px;
+        margin-left: 8px;
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
         border-bottom: 2px solid transparent;
         flex: 0 0 auto;
         &:hover {
             border-bottom: 2px solid $white;
+        }
+        &:hover:after {
+            color: $green;
+        }
+        &:after {
+            content: '/';
+            padding-left: 8px;
         }
     }
     .hamburger {
@@ -31,10 +38,10 @@ $hamburger-layer-width: 35px;
     }
     .hamburger .hamburger-inner {
         display: block;
-        background-color: white;
+        background-color: $black;
         &:before,
         &:after {
-            background-color: white;
+            background-color: $black;
         }
     }
     @include media-breakpoint-up(sm) {

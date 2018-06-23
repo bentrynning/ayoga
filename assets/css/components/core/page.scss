@@ -6,19 +6,11 @@ body.nav-active {
 
 .page {
     transition: transform .15s cubic-bezier(.2, .3, .25, .9);
-    transform: translateX(0);
-    @include media-breakpoint-up(sm) {
-        transform: translateX(0) !important;
-    }
+    margin-top: 100px;
 }
 
 .uppercase{
     text-transform: uppercase;
-}
-
-.header {
-    display: flex;
-    align-items: center;
 }
 
 .sp-header {
@@ -27,7 +19,6 @@ body.nav-active {
     display: block;
     padding: 22px;
     text-align: center;
-	background-color: scheme(1);
 }
 
 .logo {
@@ -38,14 +29,11 @@ body.nav-active {
     padding-right: 10px;
     min-height: 50px;
     &__text {
-        display: block
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1em;
     }
     &__svg {
-        padding-right: 10px;
-        max-width: 60px;
-        height: 60px;
-    }
-    &__svg svg {
-        storke: #fff;
+        padding-right: 5px;
+        max-width: 45px;
     }
 }

@@ -1,12 +1,12 @@
-<div class="panel banner" style="background-image: url('{{#if main_image}}{{main_image}}{{else}}{{global.main_image}}{{/if}}')">
-	<div class="veil"></div>
-	<div class="panel_body">
-		<header class="header">
-			<a href="/" class="logo">
-				<img class="logo__svg" src="{{global.logo_src}}" alt="logo"></img>
-				<span class="uppercase">Authentic <strong>Yoga</strong></span>
-			</a>
-			{{>nav}}
-		</header>
-	</div>
-</div>
+<header class="header">
+    <div class="header__wrapper">
+        <a href="/" class="logo">
+            <img class="logo__svg" src="{{global.logo_src}}" alt="logo"></img>
+            <span class="logo__text">
+                Authentic
+                <strong>Yoga</strong>
+            </span>
+        </a>
+        {{>nav}}
+    </div>
+</header>
