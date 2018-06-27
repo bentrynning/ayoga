@@ -12,11 +12,62 @@ body.nav-active {
     z-index: 999;
     transition: transform .15s cubic-bezier(.2, .3, .25, .9);
     &__wrapper {
-        padding: 20px 40px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         margin: 0 auto;
         width: 100%;
         max-width: 1400px;
     }
+    @include media-breakpoint-up(md) {
+		&__wrapper {
+            padding: 10px 40px;
+        }
+	}
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding-right: 10px;
+    min-height: 50px;
+    &__svg {
+        padding-right: 5px;
+        max-width: 45px;
+    }
+    &__flipper-wrap {
+        display: inline-block;
+    }
+    &__flipper-back,
+    &__flipper {
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        font-weight: bold;
+        transition: 0.6s;
+    }
+    &__text {
+        position: relative;
+    }   
+    &:hover {
+        .logo__flipper {
+            transform: rotateX(180deg);
+        }
+        .logo__flipper-back {
+            color: $green;
+            transform: rotateX(0);
+        }
+    }
+    &__flipper {
+        transform: rotateX(0);
+    }
+    &__flipper-back {
+        transform: rotateX(-180deg);
+    }
+   
+
 }

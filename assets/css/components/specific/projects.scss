@@ -7,13 +7,13 @@
 	position: relative;
 	font-weight: 300;
 	background-color: $white;
-	padding: 15px;
+	padding: 10px;
 	overflow: hidden;
 	&__image {
 		background-size: cover;
 		min-height: 300px;
 		background-position: center center;
-		transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
+		transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 220ms;
 	}
 	&__name {
 		background-color: scheme(1);
@@ -35,7 +35,7 @@
 
 	&:hover {
 		.practice__image {
-			transform: scale(1.1);
+			transform: scale(1.04);
 		}
 	}
 

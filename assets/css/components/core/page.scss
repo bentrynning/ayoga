@@ -6,7 +6,7 @@ body.nav-active {
 
 .page {
     transition: transform .15s cubic-bezier(.2, .3, .25, .9);
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .uppercase{
@@ -19,21 +19,4 @@ body.nav-active {
     display: block;
     padding: 22px;
     text-align: center;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    padding-right: 10px;
-    min-height: 50px;
-    &__text {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.1em;
-    }
-    &__svg {
-        padding-right: 5px;
-        max-width: 45px;
-    }
 }
