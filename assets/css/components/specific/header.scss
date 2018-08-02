@@ -10,7 +10,7 @@ body.nav-active {
     left: 0;
     right: 0;
     z-index: 999;
-    transition: transform .15s cubic-bezier(.2, .3, .25, .9);
+    transition: transform 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
     &__wrapper {
         padding: 10px 20px;
         display: flex;
@@ -20,10 +20,10 @@ body.nav-active {
         max-width: 1400px;
     }
     @include media-breakpoint-up(md) {
-		&__wrapper {
+        &__wrapper {
             padding: 10px 40px;
         }
-	}
+    }
 }
 
 .logo {
@@ -52,13 +52,13 @@ body.nav-active {
     }
     &__text {
         position: relative;
-    }   
+    }
     &:hover {
         .logo__flipper {
             transform: rotateX(180deg);
         }
         .logo__flipper-back {
-            color: $green;
+            color: $base_color;
             transform: rotateX(0);
         }
     }
@@ -68,6 +68,4 @@ body.nav-active {
     &__flipper-back {
         transform: rotateX(-180deg);
     }
-   
-
 }

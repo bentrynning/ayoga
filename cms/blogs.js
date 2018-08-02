@@ -1,3 +1,5 @@
 ({
-	blog_title: 'Historier som teller'
-})
+    blog_title: "Yogaens tidløse visdom",
+    specialty: "Autentisk Yoga i vår moderne tid",
+    background: ""
+});

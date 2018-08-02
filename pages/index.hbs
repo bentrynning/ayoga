@@ -2,39 +2,25 @@
 
 <div class="panel">
 	<div class="panel_body">
-		<div class="row">
-			<div class="col-md-8">
-				<h1 class="h1">
-					{{specialty}}
-					<span class="heading-border"></span>
-				</h1>
-				<p>{{background}}</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="panel">
-	<div class="panel_body">
 		<h1 class="h1">
 			{{practices_title}}
 			<span class="heading-border"></span>
 		</h1>
+		<div class="wedge-3x"></div>
 		<p>{{practices_beskrivelse}}</p>
+		<div class="wedge-3x"></div>
 		<div class="practices">
-			{{#practices}}
-				{{#each this}}
-					<a href="/practices/{{page_slug}}" class="practice">
-						<div class="practice__image" style="background-image: url('{{practice_entry.image}}')"></div>
-						<div class="practice__info">
-							<div class="practice__name">{{practice_entry.title}}</div>
-						</div>
-						<div class="practice__desc contentbox contentbox--full-width">
-							{{practice_entry.description}}
-						</div>
-					</a>
-				{{/each}}
-			{{/practices}}
+			{{#practices}} {{#each this}}
+			<a href="/practices/{{page_slug}}" class="practice">
+				<div class="practice__image" style="background-image: url('{{practice_entry.image}}')"></div>
+				<div class="practice__info">
+					<div class="practice__name">{{practice_entry.title}}</div>
+				</div>
+				<div class="practice__desc contentbox contentbox--full-width">
+					{{practice_entry.description}}
+				</div>
+			</a>
+			{{/each}} {{/practices}}
 		</div>
 	</div>
 </div>
@@ -53,19 +39,21 @@
 
 	<div class="panel_body">
 		<div class="cards">
-			{{price_sdescription}}
-			{{#each price_list}}
-				<div class="card">
-					<div class="card__wrap">
-						<div class="card__title"><h3 class="h3">{{title}}</h3></div>
-						<div class="card__content">
-							<div class="card__name">{{description}}</div>
-						</div>
-						<div class="card__bottom">
-							{{price_text}} {{price}}
-						</div>
+			{{price_sdescription}} {{#each price_list}}
+			<div class="card">
+				<div class="card__wrap">
+					<div class="card__title">
+						<h3 class="h3">{{title}}</h3>
+					</div>
+					<div class="card__content">
+						{{description}}
+					</div>
+					<div class="card__bottom">
+						<div class="card__info">{{price}}</div>
+						<div class="card__info">{{meta_info}}</div>
 					</div>
 				</div>
+			</div>
 			{{/each}}
 		</div>
 	</div>
@@ -77,7 +65,7 @@
 		<div class="wedge"></div>
 		<h3 class="h3">{{cta_text}}</h3>
 		<div class="wedge-3x"></div>
-		<a class="btn" href="mailto:ayouga@gmail.com">{{cta_button_text}}</a>
+		<a class="btn" href="mailto:{{cta_mail}}">{{cta_button_text}}</a>
 	</div>
 </div>
 

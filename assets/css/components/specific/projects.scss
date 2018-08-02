@@ -1,53 +1,50 @@
 .practices {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .practice {
-	width: 33.333%;
-	position: relative;
-	font-weight: 300;
-	background-color: $white;
-	padding: 10px;
-	overflow: hidden;
-	&__image {
-		background-size: cover;
-		min-height: 300px;
-		background-position: center center;
-		transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 220ms;
-	}
-	&__name {
-		background-color: scheme(1);
-		border: 5px solid $green;
-		padding: 20px;
-		display: inline-block;
-		position: absolute;
-		top:0;
-		left: 0;
-	}
-	&__desc {
-		width: auto;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		margin: 30px;
-	}
+    width: 33.333%;
+    position: relative;
+    background-color: $white;
+    padding: 10px;
+    overflow: hidden;
+    &__image {
+        background-size: cover;
+        min-height: 300px;
+        background-position: center center;
+        transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 220ms;
+    }
+    &__name {
+        background-color: scheme(1);
+        border: 5px solid $base-color;
+        padding: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__desc {
+        font-weight: 300;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 30px;
+    }
 
-	&:hover {
-		.practice__image {
-			transform: scale(1.04);
-		}
-	}
+    &:hover {
+        .practice__image {
+            transform: scale(1.04);
+        }
+    }
 
-	@include media-breakpoint-down(md) {
-		width: 50%;
-	}
+    @include media-breakpoint-down(md) {
+        width: 50%;
+    }
 
-	@include media-breakpoint-down(sm) {
-		width: 100%;
-	}
-	@include clearfix();
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+    @include clearfix();
 }
-
-
-

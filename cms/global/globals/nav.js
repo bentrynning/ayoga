@@ -1,6 +1,6 @@
 ({
 	menu_text: 'Meny',
-	link2: 'Om meg',
+	link2: 'Om',
 	link3: 'Aktuelt',
-	link4: 'Blog'
+	link4: 'Blogg'
 })

@@ -1,3 +1,9 @@
-<div class="panel banner" style="background-image: url('{{#if main_image}}{{main_image}}{{else}}{{global.main_image}}{{/if}}')">
-	<div class="veil"></div>
+<div class="banner">
+	<div class="banner__image" style="background-image: url('{{#if main_image}}{{main_image}}{{else}}{{global.main_image}}{{/if}}')"></div>
+	<div class="banner__content">
+		<div class="banner__text">
+			{{specialty}}
+			<p>{{background}}</p>
+		</div>
+	</div>
 </div>

@@ -1,6 +1,6 @@
 $hamburger-types: (collapse);
 $hamburger-layer-width: 35px;
-@import '../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+@import "../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 .nav {
     max-width: 1280px;
     color: $black;
@@ -20,10 +20,10 @@ $hamburger-layer-width: 35px;
             border-bottom: 2px solid $white;
         }
         &:hover:after {
-            color: $green;
+            color: $base-color;
         }
         &:after {
-            content: '/';
+            content: "/";
             padding-left: 8px;
         }
     }

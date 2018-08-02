@@ -9,7 +9,7 @@ body.nav-active {
 
 .mobile-nav {
     position: fixed;
-    background: $black;
+    background: $base_color;
     color: $white;
     top: 0;
     right: 0;
@@ -17,8 +17,8 @@ body.nav-active {
     padding: 30px 25px;
     width: 250px;
     transform: translateX(250px);
-    transition: transform .15s cubic-bezier(.2, .3, .25, .9);
-    
+    transition: transform 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+
     &__list {
         display: flex;
         flex-direction: column;

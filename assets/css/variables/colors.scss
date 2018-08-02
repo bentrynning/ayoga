@@ -1,11 +1,10 @@
-
 // basics
 
 $scheme-colors: (#fff, #373a3c, #fafdff) !default;
 
 @function scheme($color) {
-	@return nth($scheme-colors, $color)
-};
+    @return nth($scheme-colors, $color);
+}
 
 // colors
 $blue-wgag: #0f7e9b;
@@ -13,6 +12,7 @@ $blue-light: #92d7ef;
 $green: #a2eae0;
 $grey-light: #e4e0dc;
 $red-light: #f9acbb;
+$base-color: #7375a0;
 $shadow: #dcdcdc;
 
 $white: scheme(1);
