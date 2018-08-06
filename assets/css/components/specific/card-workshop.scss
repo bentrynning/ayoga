@@ -1,0 +1,37 @@
+.workshops {
+    background-color: $grey-light;
+    &__content {
+        margin-bottom: 20px;
+    }
+}
+.card-workshop {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        background-color: $blue-wgag;
+    }
+    &__wrap {
+        padding: 20px;
+    }
+    &__date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        background-color: $white;
+    }
+    &__title {
+    }
+    &__content {
+    }
+    &__bottom {
+    }
+}

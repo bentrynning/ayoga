@@ -1,9 +1,9 @@
 ({
-    blog_title: '',
-    blog_desc: '',
-    blog_link_text: 'Les mer...',
-    $cover_image_type: 'image',
-	cover_image: '',
-    $content_type: 'quill',
-	content: ''
-})
+    blog_title: "",
+    blog_desc: "",
+    blog_link_text: "Les mer...",
+    $main_image_type: "image",
+    main_image: "",
+    $content_type: "quill",
+    content: ""
+});
