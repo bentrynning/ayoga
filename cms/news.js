@@ -23,37 +23,24 @@
 			image: '',
 			$description_type: 'textarea',
 			description: 'Meditativ Restorative Yoga.  1,5 t en gang i uken over 6 uker.',
-			price: 'Pris',
-			$date_type: 'date',
-			date: 'Wednesday, 08 August, 2018',
-			time: '',
+			price: 'Pris 550 Kr',
+			$date_type: 'text',
+			date: '08 August, 2018',
+			time: '09:00',
 			$date_value: '2018-08-08'
 		},
 		{
-			title: 'Test2',
+			title: 'Authentic Sattva Yoga 2',
 			tag: 'Workshop 2',
 			$image_type: 'image',
 			image: '',
 			$description_type: 'textarea',
-			description: 'Bare tull dette her',
-			price: 'Pris er ris',
-			$date_type: 'date',
-			date: 'Wednesday, 15 August, 2018',
-			time: '',
+			description: 'Meditativ Restorative Yoga.  1,5 t en gang i uken over 6 uker.',
+			price: 'Pris 600 kr',
+			$date_type: 'text',
+			date: '15 August, 2018',
+			time: '09:00',
 			$date_value: '2018-08-15'
-		},
-		{
-			title: 'Authentic Sattva Yoga 2',
-			tag: 'Workshop 1',
-			$image_type: 'image',
-			image: '',
-			$description_type: 'textarea',
-			description: '',
-			price: '',
-			$date_type: 'date',
-			date: 'Friday, 24 August, 2018',
-			time: '',
-			$date_value: '2018-08-24'
 		},
 		{
 			title: 'Authentic Sattva Yoga 3',
@@ -62,11 +49,24 @@
 			image: '',
 			$description_type: 'textarea',
 			description: 'Meditativ Restorative Yoga.  1,5 t en gang i uken over 6 uker.',
-			price: 'Pris',
-			$date_type: 'date',
-			date: 'Sunday, 09 September, 2018',
-			time: '',
-			$date_value: '2018-09-09'
+			price: 'Pris 430 Kr',
+			$date_type: 'text',
+			date: '24 August, 2018',
+			time: '12:00',
+			$date_value: '2018-08-24'
+		},
+		{
+			title: 'Authentic Sattva Yoga 4',
+			tag: 'Workshop 3',
+			$image_type: 'image',
+			image: '',
+			$description_type: 'textarea',
+			description: 'Informasjon om eventet',
+			price: 'Pris 330 Kr',
+			$date_type: 'text',
+			date: '24 August, 2018',
+			time: '10:00',
+			$date_value: '2018-08-24'
 		}
 	]
 })

@@ -10,6 +10,5 @@ enduro.templating_engine.registerHelper("list_tags", function(
             items: context.filter(item => item.tag === tag.name)
         });
     }
-    console.log(list);
     return options.fn(list);
 });
