@@ -1,11 +1,10 @@
 ({
-    title: "Authentic Sattva Yoga",
-    $description_type: "textarea",
-    description: "Stillhet i bevegelse",
-    $image_type: "image",
-    image: "/remote/direct_uploads/1530540418_DSC_2787bwweb.jpg",
-    $content_type: "quill",
-    content:
-        "<p>Authentic Sattva Yoga er formet som Journeys, reiser i kropp og sinn. De byr på et skifte i møte med Yogaens tidløse visdom og gir deg økt innsikt i ditt eget vesen. Ordet Sattva betyr hel og balanse. Timene kan gi deg en opplevelse av frihet, stillhet, transformasjon, ektefølt glede, medfølelse og tilstedeværelse via ulike yogiske teknikker som dynamisk bevegelse via Hatha Asanas (fysiske stillinger), pranayamas (pusteøvelser), Kriyas (energetiske øvelser), Mantras (lyd), mudras (bestemte fingerposisjoner), fri bevegelse og meditasjon. Det er ingen nivåer eller restriksjoner, du tar utgangspunkt i deg selv og der du er. </p><p>Authentic Sattva Yoga Journeys er aldri like, de er kreative, dynamiske, unike og formet for utvikling. Disse reisene har som intensjon å støtte deg, åpne opp og tøye din kropp og ditt sinn. Disse reisene handler om indre arbeid med vår fysiske kropp som verktøy, om selve opplevelsen og mestring. Følg med på nettsiden for tidspunkter for aktuelle tidspunkter og tilbud. &nbsp;</p>",
-    $content_control_path: "/brick/enduro_wysiwyg_quill/quill_control"
-});
+	title: 'Authentic Sattva Yoga',
+	$description_type: 'textarea',
+	description: 'Stillhet i bevegelse',
+	$image_type: 'image',
+	image: 'https://lh3.googleusercontent.com/pJ0N3gp_3HqrcMoLaevjgjKeoBIhg_vM4vzL3_HYoU-5GcFDWgf5zlp2ge_Ow2wuyxXTri74cs4c3IA-9GNVGtbGs2ETYni3jBuGAfLWls5UIPweXLz-4jdNtfHsKY87KfWYvEVxSEjDo_K_nXJAIBjG3fHCL53yIhObMym1b10qI86vrkhteNOx2DOEhWRW_O5goWuuCsdtiAfEaxEuslDFSnrQnbLHVZGsj_Ua545pN2CwX3Ew27L40w_Wzpksk4zWyrZGsHR_rGxVIaWT1bx5pcw2nhY7RQc-XtIE7MeY8LaLyGVbNipU-jSnW9-kNAZrPMifM09hE7_yAldaVLz4hbuxhCsMdAum2f0GxgncjKKK4rrEWOl9gvpuDR54XzbWz7vCgo4_qBUKp4CBISwSh-DSR72d63JGsRs3j9QCjLHWoKXF5KKdBg-esx3wFZn_OH2g3Hp05ZZ4NmNidm5JArh9Amlv1CatNvU3OwA6P8T-7jjz2JfLXTmtkETMS7v6Abnqwn2c9Fr4HZse4Ky6A7xZsrlCwcGyyRGAccXSRaJDujyFPeyYwKVgS89CswnGCqhckQbo8bqIgOta4iBwiDml4oIqVu0rBDYqARgUSt8MOsaGLUMxQEJJkFTd_WWgTeZ1pFxM08LwwtCd4PPNR5Z146Cf=w1024-h683-no',
+	$content_type: 'quill',
+	content: '<p>Authentic Sattva Yoga er formet som Journeys, reiser i kropp og sinn. De byr på et skifte i møte med Yogaens tidløse visdom og gir deg økt innsikt i ditt eget vesen. Ordet Sattva betyr hel og balanse. Timene kan gi deg en opplevelse av frihet, stillhet, transformasjon, ektefølt glede, medfølelse og tilstedeværelse via ulike yogiske teknikker som dynamisk bevegelse via Hatha Asanas (fysiske stillinger), pranayamas (pusteøvelser), Kriyas (energetiske øvelser), Mantras (lyd), mudras (bestemte fingerposisjoner), fri bevegelse og meditasjon. Det er ingen nivåer eller restriksjoner, du tar utgangspunkt i deg selv og der du er. </p><p>Authentic Sattva Yoga Journeys er aldri like, de er kreative, dynamiske, unike og formet for utvikling. Disse reisene har som intensjon å støtte deg, åpne opp og tøye din kropp og ditt sinn. Disse reisene handler om indre arbeid med vår fysiske kropp som verktøy, om selve opplevelsen og mestring. Følg med på nettsiden for tidspunkter for aktuelle tidspunkter og tilbud. &nbsp;</p>',
+	$content_control_path: '/brick/enduro_wysiwyg_quill/quill_control'
+})

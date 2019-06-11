@@ -1,26 +1,26 @@
 {
-    "name": "ayoga",
-    "version": "1.0.0",
-    "description": "Personal portfolio theme for enduro.js",
-    "main": "assets/vendor/enduro/index.js",
-    "scripts": {
-        "dev": "node_modules/.bin/enduro dev & npm run parcle",
-        "server": "node_modules/.bin/enduro start",
-        "build" : "NODE_ENV=production && parcel build js/main.js",
-        "parcle": "parcel watch js/main.js --out-dir _generated/assets/js"
-    },
-    "author": "Bent Rynning",
-    "license": "ISC",
-    "dependencies": {
-        "bootstrap": "4.0.0-alpha.5",
-        "enduro": "1.4.46",
-        "enduro_wysiwyg_quill": "^1.0.2",
-        "font-awesome": "^4.7.0",
-        "hamburgers": "^0.9.3",
-        "jquery": "^3.1.1"
-    },
-    "devDependencies": {
-        "babel-preset-env": "^1.6.1",
-        "parcel-bundler": "^1.6.2"
-    }
+  "name": "ayoga",
+  "version": "1.0.0",
+  "description": "Personal portfolio theme for enduro.js",
+  "main": "assets/vendor/enduro/index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/enduro dev & npm run parcle",
+    "server": "node_modules/.bin/enduro start",
+    "build": "NODE_ENV=production && parcel build js/main.js",
+    "parcle": "parcel watch js/main.js --out-dir _generated/assets/js"
+  },
+  "author": "Bent Rynning",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.5",
+    "enduro": "1.4.46",
+    "enduro_wysiwyg_quill": "^1.0.2",
+    "font-awesome": "^4.7.0",
+    "hamburgers": "^0.9.3",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.6.2"
+  }
 }

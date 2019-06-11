@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{page_title}}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/assets/css/main.css">
 
-		{{!-- fonts --}}
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+<head>
+	<title>{{page_title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{page_description}}">
+	<meta name="language" content="Norwegian">
+	<meta name="keywords" content="yoga, authenticyoga, authentic, medidation, workshop">
+	<link rel="stylesheet" href="/assets/css/main.css"> {{!-- fonts --}}
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 
-	</head>
-	<body>
-		{{>mobile-nav}}
-		{{>header}}
-		<div class="page">
-			{{>banner}}
-			{{>@partial-block}}
-			{{>footer}}
-		</div>
-		<script src="/assets/js/main.js"></script>
-	</body>
-	
+</head>
+
+<body>
+	{{>mobile-nav}} {{>header}}
+	<div class="page">
+		{{>banner}} {{>@partial-block}} {{>footer}}
+	</div>
+	<script src="/assets/js/main.js"></script>
+</body>
+
 </html>
