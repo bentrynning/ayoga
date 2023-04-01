@@ -17,7 +17,7 @@
     "enduro_wysiwyg_quill": "^1.0.2",
     "font-awesome": "^4.7.0",
     "hamburgers": "^0.9.3",
-    "jquery": "^3.1.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
